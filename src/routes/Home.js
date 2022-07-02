@@ -15,6 +15,7 @@ function Home() {
     >
       <Link to="/about">About</Link> |{" "}
       <Link to="/">Home</Link>
+      <Link to="/contact">Contact</Link>
     </nav>
     <Outlet />
   </div>
