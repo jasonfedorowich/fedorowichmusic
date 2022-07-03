@@ -69,9 +69,12 @@ class Hamburger extends React.Component{
         const Menu = BurgerMenu[menuType];
     return (
       <div id="outer-container-id">
-      <Menu styles={ styles } 
-      outerContainerId="outer-container-id">
+      <Menu right
+      styles={ styles } 
+      outerContainerId="outer-container-id"
+      >
                 {items}
+                
             </Menu>
       </div>
        

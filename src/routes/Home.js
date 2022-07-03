@@ -1,25 +1,33 @@
 import { Outlet, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import CustomRouter from "./CustomRoute";
 
 
 
-function Home() {
-  return (
-    <div>
-    <h1>Home Page</h1>
-    <a href="/about" target="_self">Visit W3Schools!</a> 
-    <nav
-      style={{
-        borderBottom: "solid 1px",
-        paddingBottom: "1rem",
-      }}
-    >
-      <Link to="/about">About</Link> |{" "}
-      <Link to="/">Home</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
-    <Outlet />
-  </div>
-  );
+class Home extends CustomRouter{
+
+
+  render(){
+    if(!this.state.completedAnimation){
+      return (<div>
+        {this.musicNotes}
+      </div>);
+    }
+    return (
+      <div>
+        <div>
+        {this.hambugerMenu}
+        </div>
+      
+      <nav>
+        <Link to="/about">About</Link> |{" "}
+        <Link to="/contact">Contact</Link>
+      </nav>
+      <Outlet />
+    </div>
+    );
+  }
+  
 }
 
 export default Home;

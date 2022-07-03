@@ -1,18 +1,21 @@
 
 import React, { Component } from 'react';
 import Hamburger from '../components/Hamburger';
+import CustomRouter from './CustomRoute';
 
-class Contact extends React.Component{
+class Contact extends CustomRouter{
 
-    constructor(props){
-        super(props)
-    }
 
     render(){
+        if(!this.state.completedAnimation){
+            return (<div>
+              {this.musicNotes}
+            </div>);
+          }
         return (
             <div>
                 <div>
-                    <Hamburger/>
+                    {this.hambugerMenu}
                 </div>
                 Contact info
             </div>
