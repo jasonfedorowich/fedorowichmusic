@@ -8,11 +8,12 @@ var styles = {
       position: 'fixed',
       width: '36px',
       height: '30px',
-      left: '36px',
-      top: '36px'
+      top: '36px',
+      right: '36px'
+      
     },
     bmBurgerBars: {
-      background: '#006400'
+      background: '#563d7c'
     },
     bmBurgerBarsHover: {
       background: '#a90000'
@@ -29,7 +30,7 @@ var styles = {
       height: '100%'
     },
     bmMenu: {
-      background: '#006400',
+      background: '#563d7c',
       padding: '2.5em 1.5em 0',
       fontSize: '1.15em'
     },
@@ -69,7 +70,7 @@ class Hamburger extends React.Component{
         const Menu = BurgerMenu[menuType];
     return (
       <div id="outer-container-id">
-      <Menu right
+      <Menu right={'right' === 'right'}
       styles={ styles } 
       outerContainerId="outer-container-id"
       >
