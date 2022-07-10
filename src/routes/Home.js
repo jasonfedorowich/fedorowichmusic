@@ -4,7 +4,11 @@ import CustomRouter from "./CustomRoute";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import video from '../resources/2022-06-26-153413.webm'
 import styls from '../css/styles.css'
-
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Canv from "../components/Offcanvas";
+import Navi from "../components/Navi"
 
 class Home extends CustomRouter {
 
@@ -26,19 +30,13 @@ class Home extends CustomRouter {
           </div>
 
         </section>
-        <section className="container text-left bg-nice-purp">
-          <div className="row">
-            <div className="col-1">
-              <Link to="/about">About</Link>
-            </div>
-            <div className="col-1">
-              <Link to="/contact">Contact</Link>
-            </div>
-          </div>
-
-
-        </section>
+            <Navi links={[
+              <Canv name="Home" title="I am the senate!!!!" body="So its treason then!!!!" link="/">Home</Canv>,
+              <Canv name="About" title="For a safer and securer empire!!!" body="Have you ever heard the tale of darth plaguis the wise?" link="/about">About</Canv>,
+              <Canv name="Contact" title="Leave us!!!" body="We're glad you can join us!!!" link="/contact">Contact</Canv>
+            ]} />
         <section className="container">
+          <p></p>
           <div className="row">
             <div className="embed-responsive embed-responsive-4by3">
             <video class="embed-responsive-item" autoPlay>
@@ -48,38 +46,58 @@ class Home extends CustomRouter {
             </div>
             
           </div>
+          <p></p>
+        </section>
+        <section className="container-lg  bg-nice-purp">
+          <div className="row">
+         
+            <h1 className="text-center mw-100 mh-100">
+              <p/>
+            <p></p>
+             I am the Senate!!!
+            <p></p>
+
+            </h1>
+         
+          </div>
+         
         </section>
         <section className="container">
           <div className="row">
+            <p></p>
             <p>
               We are music gombas live and dye by de music can you play music 
             i like me some music heavy metal and punk also good
             </p>
-         
+          <p></p>
           </div>
          
         </section>
         <section className="container bg-nice-purp">
           <div className="row">
+            <p></p>
             <p>
               Classes start when i say they start listen to me you have to listen to me get to the classes!!!!!!
             </p>
-
+            <p></p>
           </div>
 
         </section>
         <section className="container">
+          <p></p>
           <div className="row">
-            Another boring section when will this website finish
+            Get to the choppa!!!
           </div>
-
+            <p></p>
         </section>
 
         <section className="container bg-nice-purp">
         <div className="row">
+          <p></p>
           <p>
             Bottom section this is the end for you!!
           </p>
+          <p></p>
         </div>
         </section>
 
