@@ -4,6 +4,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 import Nav from 'react-bootstrap/Nav'
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavDropdown } from 'react-bootstrap';
 
 class Canv extends React.Component{
     constructor(props){
@@ -25,9 +26,9 @@ class Canv extends React.Component{
    render(){
     return (
         <>
-          <Nav.Link variant="primary" onMouseOver={this.handleShow} className="me-2" href={this.props.link}>
+          <NavDropdown variant="primary" onMouseDown={this.handleShow} className="me-2" href={this.props.link} title={this.props.name}>
             {this.props.name}
-          </Nav.Link>
+          </NavDropdown>
           <Offcanvas show={this.state.show} onHide={this.handleClose} placement='top' name='top'>
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>

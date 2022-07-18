@@ -30,11 +30,13 @@ class Home extends CustomRouter {
           </div>
 
         </section>
+        
             <Navi links={[
               <Canv name="Home" title="I am the senate!!!!" body="So its treason then!!!!" link="/">Home</Canv>,
               <Canv name="About" title="For a safer and securer empire!!!" body="Have you ever heard the tale of darth plaguis the wise?" link="/about">About</Canv>,
               <Canv name="Contact" title="Leave us!!!" body="We're glad you can join us!!!" link="/contact">Contact</Canv>
             ]} />
+            
         <section className="container">
           <p></p>
           <div className="row">
