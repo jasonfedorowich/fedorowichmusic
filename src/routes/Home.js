@@ -9,6 +9,8 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Canv from "../components/Offcanvas";
 import Navi from "../components/Navi"
+import Button from 'react-bootstrap/Button';
+import ButtonWrapper from "../components/Button";
 
 class Home extends CustomRouter {
 
@@ -62,6 +64,8 @@ class Home extends CustomRouter {
             </h1>
          
           </div>
+
+          <ButtonWrapper variant="light" size="lg" text="Find out more"></ButtonWrapper>
          
         </section>
         <section className="container">
@@ -71,9 +75,8 @@ class Home extends CustomRouter {
               We are music gombas live and dye by de music can you play music 
             i like me some music heavy metal and punk also good
             </p>
-          <p></p>
           </div>
-         
+          <ButtonWrapper variant="outline-secondary" size="sm" text="Do you have the cojanes?"></ButtonWrapper>
         </section>
         <section className="container bg-nice-purp">
           <div className="row">
@@ -83,7 +86,8 @@ class Home extends CustomRouter {
             </p>
             <p></p>
           </div>
-
+          <ButtonWrapper variant="secondary" size="lg" text="Listen up!"></ButtonWrapper>
+         
         </section>
         <section className="container">
           <p></p>
@@ -91,6 +95,8 @@ class Home extends CustomRouter {
             Get to the choppa!!!
           </div>
             <p></p>
+            <ButtonWrapper variant="outline-light" size="sm" text="Shut up!"></ButtonWrapper>
+
         </section>
 
         <section className="container bg-nice-purp">
@@ -101,6 +107,8 @@ class Home extends CustomRouter {
           </p>
           <p></p>
         </div>
+        <ButtonWrapper variant="outline-light" size="sm" text="Collect prize!"></ButtonWrapper>
+
         </section>
 
       </div>

@@ -8,7 +8,7 @@ var styles = {
       position: 'fixed',
       width: '36px',
       height: '30px',
-      top: '36px',
+      top: '16px',
       right: '36px'
       
     },
