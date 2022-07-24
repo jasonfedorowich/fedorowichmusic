@@ -12,7 +12,7 @@ class Navi extends React.Component{
 
     render(){
         return (<>
-    <Navbar bg="light" variant="light" >
+    <Navbar bg="light" variant="light" className='shadow-lg p-3 mb-5 rounded' >
         <Container>
         <Navbar.Brand href="">Navbar</Navbar.Brand>
         <Nav className="me-auto">
