@@ -24,3 +24,19 @@
     padding-left: 100;
     padding-right: 100;
 }
+
+.shrink-img-crsl{
+    transform: scale(0.7);
+}
+
+.padding-bot{
+    padding-bottom: 25px;
+}
+
+.text-on-image {
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  

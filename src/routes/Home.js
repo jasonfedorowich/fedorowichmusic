@@ -2,7 +2,6 @@ import { Outlet, Link } from "react-router-dom";
 import React, { Component } from 'react';
 import CustomRouter from "./CustomRoute";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import video from '../resources/2022-06-26-153413.webm'
 import styls from '../css/styles.css'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -12,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonWrapper from "../components/Button";
 import ContainerWrapper from "../components/Container";
 import { Container, Row, Col } from "react-bootstrap";
+import CarouselWrapper from "../components/Carousel";
 
 class Home extends CustomRouter {
 
@@ -37,19 +37,7 @@ class Home extends CustomRouter {
 
 <ContainerWrapper fluid={true} rows={
   [
-    <ContainerWrapper containerClass="lr-padding-containers" rows={[
-      <Row>
-        <div className="embed-responsive embed-responsive-4by3">
-        <video class="embed-responsive-item" autoPlay>
-          <source src={video} type="video/webm"/>
-
-        </video>
-        </div>
-      </Row>
-    ]
-    }>
-
-    </ContainerWrapper>,
+    <CarouselWrapper/>,
 
     <ContainerWrapper fluid={true} containerClass="lr-padding-containers bg-nice-purp p-3 mb-5 shadow rounded" rows={
       [
