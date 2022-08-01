@@ -12,6 +12,12 @@ import ButtonWrapper from "../components/Button";
 import ContainerWrapper from "../components/Container";
 import { Container, Row, Col } from "react-bootstrap";
 import CarouselWrapper from "../components/Carousel";
+import Blurb from "../components/HomePageBlurb";
+import { home1 } from "../text/HomePageText";
+import { home2 } from "../text/HomePageText";
+import pic1 from "../resources/OOgutZ0k.png"
+import MusicBox from "../components/MusicBox";
+import MusicPup from "../components/MusicPup";
 
 class Home extends CustomRouter {
 
@@ -40,64 +46,88 @@ class Home extends CustomRouter {
   [
     <CarouselWrapper/>,
 
-    <ContainerWrapper fluid={true} containerClass="lr-padding-containers bg-nice-purp p-3 mb-5 shadow rounded" rows={
+    <ContainerWrapper fluid={true} containerClass="lr-padding-container" rows={
+      [
+       <Container fluid className="padding-bot">
+        <Row>
+            <Col>
+              <Row className="padding-bot">
+                  <Row className="rounded shadow bg-nice-purp">
+                      <p></p>
+                    <h3 className="text-right">
+                    {home1}
+                    </h3>
+                      </Row>
+                    
+                    </Row>
+                    <Row>
+                      <Col className="padding-bot">
+                        <img src={pic1} className='img-fluid rounded'>
+                        </img>
+                      </Col>
+                      
+                    </Row>
+                   
+                  </Col>
+                  <Col className="rounded bg-nice-purp padding-bot shadow">
+                    <p></p>
+                  <p className="text-center">
+                    {home2}
+                    </p>
+                    <p></p>
+                    <ButtonWrapper variant="light" size="md" text="Meet Us" clazz="text-center"></ButtonWrapper>
+                    <Row>
+                      <MusicBox/>
+                    </Row>
+                  </Col>
+                </Row>
+       </Container>
+      
+      
+
+      ]
+    }>
+    </ContainerWrapper>,
+
+     <ContainerWrapper fluid={true} containerClass="lr-padding-containers" rows={
+      [
+       
+       
+        
+       
+       
+    
+      ]
+    }>
+    </ContainerWrapper>,
+    <ContainerWrapper fluid={true} containerClass="p-3 mb-5 rounded lr-padding-containers" rows={
       [
         <Row>
           <Col>
-          <h1 className="text-center">
-          <p/>
-        <p></p>
-         I am the Senate!!!
-        <p></p>
-
-        </h1>
+          <p>
+            <h2 className="fnt-purp">
+              Having taught over 200 students from the Greater Toronto Area 
+            </h2>
+          </p>
+          </Col>
+          <Col className="bg-nice-purp rounded shadow">
+          <p>
+          </p>
+          <p>
+            <h3>Find out what our students and parents our saying about us...</h3>
+          </p>
+          <ButtonWrapper variant="light" size="md" text="Learn More" clazz={"text-center"}></ButtonWrapper>
           </Col>
          
-     
-        </Row>,
-      <ButtonWrapper variant="light" size="lg" text="Find out more"></ButtonWrapper>
-
-      ]
-    }>
-    </ContainerWrapper>,
-
-     <ContainerWrapper containerClass="shadow p-3 mb-5 rounded lr-padding-containers" rows={
-      [
-        <Row>
-          <p></p>
-        <p>
-          We are music gombas live and dye by de music can you play music 
-        i like me some music heavy metal and punk also good
-        </p>
-        </Row>,
-        <ButtonWrapper variant="outline-secondary" size="sm" text="Do you have the cojanes?"></ButtonWrapper>
-      ]
-    }>
-    </ContainerWrapper>,
-    <ContainerWrapper containerClass="bg-nice-purp shadow p-3 mb-5 rounded lr-padding-containers" rows={
-      [
-        <Row>
-          <p>
-          </p>
-          <p>
-          Classes start when i say they start listen to me you have to listen to me get to the classes!!!!!!
-          </p>
-        </Row>,
-        <ButtonWrapper variant="outline-secondary" size="sm" text="Do you have what it takes?"></ButtonWrapper>
+        </Row>
+        
       ]
     }>
 
     </ContainerWrapper>, 
-      <ContainerWrapper containerClass="shadow p-3 mb-5 rounded lr-padding-containers" rows={
+      <ContainerWrapper containerClass="container-sm lr-padding-containers" rows={
         [
-          <Row>
-            <p>
-            </p>
-            <p>
-            Get to the choppa!!!
-            </p>
-          </Row>,
-          <ButtonWrapper variant="outline-light" size="sm" text="Shut up!"></ButtonWrapper>
+          <MusicPup/>
         ]
       }>
 
@@ -112,7 +142,7 @@ class Home extends CustomRouter {
               Bottom section this is the end for you!!
               </p>
             </Row>,
-            <ButtonWrapper variant="outline-light" size="sm" text="Collect prize!"></ButtonWrapper>
+            <ButtonWrapper variant="outline-light" size="sm" text="Collect prize!" clazz={"text-center"}></ButtonWrapper>
           ]
         }>
 

@@ -11,12 +11,12 @@ class ButtonWrapper extends React.Component{
     constructor(props){
         super(props);
     }
-
+      //float-end for end of col
     render(){
        return (<Row>
-          <div className="text-center">
+          <div className={this.props.clazz}>
               <p></p>
-            <Button variant={this.props.variant} size={this.props.size}>
+            <Button variant={this.props.variant} size={this.props.size} className={this.props.btnClass}>
               {this.props.text}
             </Button>
             <p></p>

@@ -3,7 +3,7 @@
 }
 
 .bg-nice-purp{
-    background-color: #563d7c
+    background-color: #B88AC8
 }
 
 .large-font{
@@ -42,4 +42,16 @@
   
   .nav-bar-bg{
     background-color: #B88AC8;
+  }
+
+  .fnt-white{
+    color: #FFFF;
+  }
+
+  .fnt-purp{
+    color: #B88AC8;
+  }
+
+  .bg-white{
+    background-color: #FFFF;
   }
