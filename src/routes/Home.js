@@ -30,9 +30,10 @@ class Home extends CustomRouter {
          
         
             <Navi links={[
-              <Canv name="Home" title="I am the senate!!!!" body="So its treason then!!!!" link="/">Home</Canv>,
-              <Canv name="About" title="For a safer and securer empire!!!" body="Have you ever heard the tale of darth plaguis the wise?" link="/about">About</Canv>,
-              <Canv name="Contact" title="Leave us!!!" body="We're glad you can join us!!!" link="/contact">Contact</Canv>
+              <Canv name="What Students Are Saying!" title="I am the senate!!!!" body="So its treason then!!!!" link="/testimonials">What Students Are Saying</Canv>,
+              <Canv name="What We Offer" title="I am the senate!!!!" body="So its treason then!!!!" link="/offerings">What We Offer</Canv>,
+              <Canv name="About Us" title="For a safer and securer empire!!!" body="Have you ever heard the tale of darth plaguis the wise?" link="/about">About Us</Canv>,
+              <Canv name="Contact Us" title="Leave us!!!" body="We're glad you can join us!!!" link="/contact">Contact Us</Canv>
             ]} />
 
 <ContainerWrapper fluid={true} rows={
