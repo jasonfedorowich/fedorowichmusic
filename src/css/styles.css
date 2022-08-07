@@ -55,3 +55,12 @@
   .bg-white{
     background-color: #FFFF;
   }
+
+  .linear-li{
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .fnt-size-small{
+    font-size: xx-small;
+  }

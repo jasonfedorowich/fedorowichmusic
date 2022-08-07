@@ -11,15 +11,18 @@ import Button from 'react-bootstrap/Button';
 import ButtonWrapper from "../components/Button";
 import ContainerWrapper from "../components/Container";
 import { Container, Row, Col } from "react-bootstrap";
-import CarouselWrapper from "../components/Carousel";
+import PictureCarousel from "../components/Carousel";
 import Blurb from "../components/HomePageBlurb";
 import { home1 } from "../text/HomePageText";
 import { home2 } from "../text/HomePageText";
 import pic1 from "../resources/OOgutZ0k.png"
 import MusicBox from "../components/MusicBox";
 import MusicPup from "../components/MusicPup";
+import TextCarousel from "../components/TextCarousel";
+import Footer from "../components/Footer";
 
 class Home extends CustomRouter {
+
 
 
   render() {
@@ -36,7 +39,7 @@ class Home extends CustomRouter {
          
         
             <Navi links={[
-              <Canv name="What Students Are Saying!" title="I am the senate!!!!" body="So its treason then!!!!" link="/testimonials">What Students Are Saying</Canv>,
+              <Canv name="Our Students" title="I am the senate!!!!" body="So its treason then!!!!" link="/testimonials">Our Students</Canv>,
               <Canv name="What We Offer" title="I am the senate!!!!" body="So its treason then!!!!" link="/offerings">What We Offer</Canv>,
               <Canv name="About Us" title="For a safer and securer empire!!!" body="Have you ever heard the tale of darth plaguis the wise?" link="/about">About Us</Canv>,
               <Canv name="Contact Us" title="Leave us!!!" body="We're glad you can join us!!!" link="/contact">Contact Us</Canv>
@@ -44,7 +47,7 @@ class Home extends CustomRouter {
 
 <ContainerWrapper fluid={true} rows={
   [
-    <CarouselWrapper/>,
+    <PictureCarousel/>,
 
     <ContainerWrapper fluid={true} containerClass="lr-padding-container" rows={
       [
@@ -100,27 +103,9 @@ class Home extends CustomRouter {
       ]
     }>
     </ContainerWrapper>,
-    <ContainerWrapper fluid={true} containerClass="p-3 mb-5 rounded lr-padding-containers" rows={
+    <ContainerWrapper fluid={true} containerClass="p-3 mb-5 rounded lr-padding-containers bg-nice-purp" rows={
       [
-        <Row>
-          <Col>
-          <p>
-            <h2 className="fnt-purp">
-              Having taught over 200 students from the Greater Toronto Area 
-            </h2>
-          </p>
-          </Col>
-          <Col className="bg-nice-purp rounded shadow">
-          <p>
-          </p>
-          <p>
-            <h3>Find out what our students and parents our saying about us...</h3>
-          </p>
-          <ButtonWrapper variant="light" size="md" text="Learn More" clazz={"text-center"}></ButtonWrapper>
-          </Col>
-         
-        </Row>
-        
+        <TextCarousel/>
       ]
     }>
 
@@ -135,14 +120,7 @@ class Home extends CustomRouter {
 
         <ContainerWrapper fluid={true} containerClass="bg-nice-purp shadow p-3 mb-5 rounded lr-padding-containers" rows={
           [
-            <Row>
-              <p>
-              </p>
-              <p>
-              Bottom section this is the end for you!!
-              </p>
-            </Row>,
-            <ButtonWrapper variant="outline-light" size="sm" text="Collect prize!" clazz={"text-center"}></ButtonWrapper>
+            <Footer/>
           ]
         }>
 
