@@ -64,3 +64,11 @@
   .fnt-size-small{
     font-size: xx-small;
   }
+
+  .img-h{
+    height: 100vh;
+  }
+
+  .scale-sm{
+    scale: 0.999;
+  }

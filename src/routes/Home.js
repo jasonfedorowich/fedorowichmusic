@@ -20,6 +20,7 @@ import MusicBox from "../components/MusicBox";
 import MusicPup from "../components/MusicPup";
 import TextCarousel from "../components/TextCarousel";
 import Footer from "../components/Footer";
+import vid1 from "../resources/vid1.MOV"
 
 class Home extends CustomRouter {
 
@@ -53,36 +54,27 @@ class Home extends CustomRouter {
       [
        <Container fluid className="padding-bot">
         <Row>
-            <Col>
+            
               <Row className="padding-bot">
                   <Row className="rounded shadow bg-nice-purp">
                       <p></p>
-                    <h3 className="text-right">
+                    <h3 className="text-center">
                     {home1}
                     </h3>
+                    <p>
+                      {home2}
+                    </p>
                       </Row>
                     
                     </Row>
-                    <Row>
-                      <Col className="padding-bot">
-                        <img src={pic1} className='img-fluid rounded'>
-                        </img>
-                      </Col>
-                      
+        
+                    <Row className="padding-bot">
+                        <img src={pic1} className='img-rounded w-75 d-block mx-auto'>
+                        </img>                                      
                     </Row>
                    
-                  </Col>
-                  <Col className="rounded bg-nice-purp padding-bot shadow">
-                    <p></p>
-                  <p className="text-center">
-                    {home2}
-                    </p>
-                    <p></p>
-                    <ButtonWrapper variant="light" size="md" text="Meet Us" clazz="text-center"></ButtonWrapper>
-                    <Row>
-                      <MusicBox/>
-                    </Row>
-                  </Col>
+                  
+                  
                 </Row>
        </Container>
       
@@ -112,7 +104,11 @@ class Home extends CustomRouter {
     </ContainerWrapper>, 
       <ContainerWrapper containerClass="container-sm lr-padding-containers" rows={
         [
-          <MusicPup/>
+          <Row className="padding-bot">
+            <video src={vid1} controls>
+
+            </video>
+          </Row>
         ]
       }>
 
