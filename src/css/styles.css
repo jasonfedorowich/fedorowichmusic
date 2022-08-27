@@ -72,3 +72,10 @@
   .scale-sm{
     scale: 0.999;
   }
+
+  .img-fit{
+    height: 500px;
+    width: 200px;
+    object-position: top left;
+    object-fit: cover;
+  }

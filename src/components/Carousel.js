@@ -23,7 +23,7 @@ class PictureCarousel extends React.Component{
               <Carousel fade>
                         <Carousel.Item>
                             <header>
-                                <img className='d-block w-100'
+                                <img className='d-block w-100 img-fit'
                             src={img1}
                             alt="Fedorowich Music Studio"
                             />
@@ -35,7 +35,7 @@ class PictureCarousel extends React.Component{
                     </Carousel.Item>
                     <Carousel.Item>
                     <header>
-                        <img className='d-block w-100'
+                        <img className='d-block w-100 img-fit'
                             src={img2}
                             alt="Fedorowich Music Studio"
                             />
@@ -46,7 +46,7 @@ class PictureCarousel extends React.Component{
                     </Carousel.Item>
                     <Carousel.Item>
                     <header>
-                                <img className='d-block w-100'
+                                <img className='d-block w-100 img-fit'
                             src={img3}
                             alt="Fedorowich Music Studio"
                            />
@@ -57,7 +57,7 @@ class PictureCarousel extends React.Component{
                     </Carousel.Item>
                     <Carousel.Item>
                     <header>
-                                <img className='d-block w-100'
+                                <img className='d-block w-100 img-fit'
                             src={img4}
                             alt="Fedorowich Music Studio"
                            />
@@ -68,7 +68,7 @@ class PictureCarousel extends React.Component{
                     </Carousel.Item>
                     <Carousel.Item>
                     <header>
-                                <img className='d-block w-100'
+                                <img className='d-block w-100 img-fit'
                             src={img5}
                             alt="Fedorowich Music Studio"
                            />
