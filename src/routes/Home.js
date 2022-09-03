@@ -21,6 +21,7 @@ import MusicPup from "../components/MusicPup";
 import TextCarousel from "../components/TextCarousel";
 import Footer from "../components/Footer";
 import vid1 from "../resources/vid1.MOV"
+import kid from "../resources/student1.jpg"
 
 class Home extends CustomRouter {
 
@@ -40,7 +41,7 @@ class Home extends CustomRouter {
          
         
             <Navi links={[
-              <Canv name="Our Students" title="I am the senate!!!!" body="So its treason then!!!!" link="/testimonials">Our Students</Canv>,
+              <Canv name="Our Students" title="At Fedorowich Music Studio our students are top priority" body="Learn more about our students" img={<img src={kid} alt="Gold Medal" className="img-thumbnail"></img>} link="/testimonials">Our Students</Canv>,
               <Canv name="What We Offer" title="I am the senate!!!!" body="So its treason then!!!!" link="/offerings">What We Offer</Canv>,
               <Canv name="About Us" title="For a safer and securer empire!!!" body="Have you ever heard the tale of darth plaguis the wise?" link="/about">About Us</Canv>,
               <Canv name="Contact Us" title="Leave us!!!" body="We're glad you can join us!!!" link="/contact">Contact Us</Canv>

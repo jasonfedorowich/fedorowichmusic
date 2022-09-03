@@ -23,8 +23,8 @@ class Footer extends React.Component{
             <Col>
             <img src={logo}></img>
             </Col>
-            <Col><div>©2022 Fedorowich Music Studio. All rights reserved.	</div></Col>
-            <Col>
+            <Col className='text-center'><div>©2022 Fedorowich Music Studio. All rights reserved.	</div></Col>
+            <Col className='text-center'>
                 <ul >
                     <li className='linear-li'>
                     <Link to={"testimonials"}>Testimonials</Link>
