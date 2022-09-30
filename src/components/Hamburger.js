@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BurgerMenu from 'react-burger-menu';
+import styls from '../css/styles.css'
 
 const menuType = 'stack';
 
@@ -50,15 +51,22 @@ var styles = {
   }
 
   var items = [
-    <a key="0" href='/'>
+    <a key="0" href='/' className='rm-underline'>
       <span>Home</span>
     </a>,
-    <a key ="1" href='/about'>
-      <span>About</span>
+    <a key ="1" href='/offerings' className='rm-underline'>
+      <span>Offerings</span>
     </a>,
-    <a key="2" href='/contact'>
+     <a key="2" href='/students' className='rm-underline'>
+     <span>Students</span>
+   </a>,
+   <a key="3" href='/About' className='rm-underline'>
+   <span>About</span>
+ </a>,
+    <a key="4" href='/contact' className='rm-underline'>
       <span>Contact</span>
     </a>
+     
   ]
 class Hamburger extends React.Component{
 

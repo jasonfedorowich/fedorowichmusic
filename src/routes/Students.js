@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
-import CustomRouter from './CustomRoute';
+import CustomRouter from "./CustomRoute";
 
-
-class Offerings extends CustomRouter{
-    
+class Students extends CustomRouter{
 
     render(){
         if (!this.state.completedAnimation) {
@@ -13,8 +10,10 @@ class Offerings extends CustomRouter{
           }
           return (
             <></>
-          )
+          );
+
     }
+
 }
 
-export default Offerings;
+export default Students;
